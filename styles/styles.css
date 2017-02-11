@@ -1,6 +1,7 @@
 body {
     background-image: url('../images/tile.jpg');
     background-repeat: repeat;
+    font-family: Tahoma, Geneva, sans-serif;
     font-size: 20px;
     margin: 0;
     padding: 0;
@@ -27,34 +28,95 @@ body {
     width: 80%;
 }
 
-#add_container {
+#search_container {
+    background-color:rgba(255, 255, 255, 0.2);
+    border-radius: 1.4em;
     float: left;
-    width: 50%;
-    height: 100%; 
-    background-color: blue;
+    width: 48%;
+    height: 100%;
 }
 
-#search_container {
+#add_container {
+    background-color:rgba(255, 255, 255, 0.2);
+    border-radius: 1.4em;
     float: right;
-    width: 50%;
-    height: 100%;
-    background-color: green;
+    width: 48%;
+    height: 100%; 
+}
+
+p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.input_container {
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 1.0em;
+    width: 90%;
+}
+
+.input_container input[type='text'] {
+    border: none;
+    border-radius: 0.2em;
+    font-size: 0.8em;
+    padding: 0.4em;
+    width: 44%;
+}
+
+.input_container select {
+    width: 32%;
+    border: none;
+    border-radius: 0.2em;
+    font-size: 0.8em;
+    padding: 0.4em;
+}
+
+.input_container input[type='number'] {
+    border: none;
+    border-radius: 0.2em;
+    font-size: 0.8em;
+    padding: 0.4em;
+    width: 14%;
+}
+
+.input_container input[type='submit'] {
+    background-color:rgba(255, 140, 0, 0.6);
+    border: 1px solid #ffffff;
+    border-radius: 1.4em;
+    color: #ffffff;
+    font-size: 0.8em;
+    width: 40%;
+    padding: 0.6em 0;
+}
+
+.input_container input[type='submit']:hover {
+    background-color:rgba(255, 140, 0, 1.0);
+    transition: 0.4s ease;
 }
 
 #button_container {
     text-align: center;
-    padding: 2.0em 0;
+    padding: 1.0em 0;
 }
 
-/*#top_arrow {
-    text-align: center;
-    position: fixed;
-    background-color: #505050;
-    bottom: 5%;
+#button_container button {
+    background-color:rgba(255, 140, 0, 0.6);
+    border: 1px solid #ffffff;
+    border-radius: 1.4em;
     color: #ffffff;
-    right: 5%;
-    height: 2.0em;
-    width: 2.0em;
-    text-decoration: none;
-    border-radius: 2.0em;
-}*/
+    font-size: 0.8em;
+    padding: 1.0em 1.4em;
+}
+
+#button_container button:hover {
+    background-color:rgba(255, 140, 0, 1.0);
+    transition: 0.4s ease;
+}
+
+#heroes_container {
+    color: #ffffff;
+}
+
