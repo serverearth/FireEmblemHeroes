@@ -1,0 +1,42 @@
+Name|Title|Attribute|Class|Gender|Hp|Atk|Spd|Def|Res|Image
+Alfonse|Prince of Askr|Red|Sword|Male|20|21|7|9|6|alfonse.jpg
+Caeda|Talys's Heart|Red|Sword|Female|18|19|11|6|10|caeda.jpg
+Cain|The Bull|Red|Sword|Male|19|17|3|8|7|cain.jpg
+Chrom|Exalted Prince|Red|Sword|Male|22|26|7|8|5|chrom.jpg
+Corrin|Fateful Prince|Red|Sword|Male|21|25|9|7|6|corrin-m.jpg
+Leo|Sorcerous Prince|Red|Mage|Male|18|22|6|7|9|leo.jpg
+Lilina|Delightful Noble|Red|Mage|Female|17|23|7|5|19|lilina.jpg
+Lucina|Future Witness|Red|Sword|Female|20|25|11|7|5|lucina.jpg
+Lyn|Lady of the Plains|Red|Sword|Female|19|23|12|8|6|lyn.jpg
+Marth|Altean Prince|Red|Sword|Male|20|24|9|8|7|marth.jpg
+Ogma|Loyal Blade|Red|Sword|Male|22|16|6|7|4|ogma.jpg
+Roy|Young Lion|Red|Sword|Male|21|25|10|7|5|roy.jpg
+Ryoma|Peerless Samurai|Red|Sword|Male|20|25|12|6|5|ryoma.jpg
+Tiki|Dragon Scion|Red|Beast|Female|16|21|5|9|8|tiki.jpg
+Abel|The Panther|Blue|Lance|Male|22|16|4|9|7|abel.jpg
+Azura|Lady of the Lake|Blue|Lance|Female|18|18|8|5|7|azura.jpg
+Cordelia|Knight Paragon|Blue|Lance|Female|19|18|5|6|7|cordelia.jpg
+Corrin|Fateful Princess|Blue|Beast|Female|20|18|7|9|7|corrin-f.jpg
+Effie|Army of One|Blue|Lance|Female|23|28|6|12|5|effie.jpg
+Hinoka|Warrior Princess|Blue|Lance|Female|21|16|4|7|7|hinoka.jpg
+Linde|Light Mage|Blue|Mage|Female|17|24|11|5|6|linde.jpg
+Peri|Playful Slayer|Blue|Lance|Female|17|21|10|7|7|peri.jpg
+Robin|High Deliverer|Blue|Mage|Male|19|19|8|8|6|robin.jpg
+Shanna|Sprightly Flier|Blue|Lance|Female|17|16|10|7|8|shanna.jpg
+Sharena|Princess of Askr|Blue|Lance|Female|20|20|11|8|6|sharena.jpg
+Anna|Commander|Green|Axe|Female|20|19|11|6|&|anna.jpg
+Fae|Divine Dragon|Green|Beast|Female|17|19|5|7|9|fae.jpg
+Hawkeye|Desert Guardian|Green|Axe|Male|22|21|6|7|7|hawkeye.jpg
+Hector|General of Ostia|Green|Axe|Male|25|27|6|12|5|hector.jpg
+Merric|Wind Mage|Green|Mage|Male|20|22|9|7|5|merric.jpg
+Minerva|Red Dragoon|Green|Axe|Female|19|24|10|9|6|minerva.jpg
+Nino|Pious Mage|Green|Mage|Female|17|17|11|5|11|nino.jpg
+Raven|Peerless Fighter|Green|Axe|Male|20|17|5|7|6|raven.jpg
+Sheena|Princess of Gra|Green|Axe|Female|22|20|7|13|8|sheena.jpg
+Elise|Budding Flower|Gray|Staff|Female|16|9|9|5|9|elise.jpg
+Felicia|Maid Mayhem|Gray|Shuriken|Female|16|14|12|4|10|felicia.jpg
+Jakob|Devoted Servant|Gray|Shuriken|Male|18|15|10|9|6|jakob.jpg
+Jeorge|Perfect Shot|Gray|Bow|Male|19|23|9|6|6|jeorge.jpg
+Sakura|Loving Priestess|Gray|Staff|Female|18|7|9|6|9|sakura.jpg
+Takumi|Wild Card|Gray|Bow|Male|19|23|8|7|6|takumi.jpg
+Wrys|Kindly Priest|Gray|Staff|Male|19|6|7|6|11|wrys.jpg
