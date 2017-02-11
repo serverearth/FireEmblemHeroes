@@ -1,0 +1,60 @@
+body {
+    background-image: url('../images/tile.jpg');
+    background-repeat: repeat;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: block;
+    width: 100%;
+}
+
+#title_container {
+    text-align: center;
+}
+
+#title_container img {
+    height: auto;
+    padding: 2.0em 0;
+    width: 40%;
+}
+
+#add_search_container {
+    margin: auto;
+    height: 300px;
+    width: 80%;
+}
+
+#add_container {
+    float: left;
+    width: 50%;
+    height: 100%; 
+    background-color: blue;
+}
+
+#search_container {
+    float: right;
+    width: 50%;
+    height: 100%;
+    background-color: green;
+}
+
+#button_container {
+    text-align: center;
+    padding: 2.0em 0;
+}
+
+/*#top_arrow {
+    text-align: center;
+    position: fixed;
+    background-color: #505050;
+    bottom: 5%;
+    color: #ffffff;
+    right: 5%;
+    height: 2.0em;
+    width: 2.0em;
+    text-decoration: none;
+    border-radius: 2.0em;
+}*/
