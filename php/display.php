@@ -1,7 +1,5 @@
 <?php
     
-
-
     function display_heroes($heroes) {
         foreach($heroes as $hero) {
             $name = $hero->name;
@@ -14,7 +12,6 @@
             $spd = $hero->spd;
             $def = $hero->def;
             $res = $hero->res;
-
             $image = 'images/' . $hero->image;
 
             echo "<div class='hero_container'>
@@ -36,4 +33,5 @@
     }
 
     display_heroes($heroes);
+    
 ?>

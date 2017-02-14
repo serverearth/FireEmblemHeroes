@@ -29,27 +29,27 @@
                 </div>
                 <div class='input_container'>
                     <select name='attribute'>
-                        <option value='any'>Any Attribute</option>
-                        <option value='red'>Red</option>
-                        <option value='blue'>Blue</option>
-                        <option value='green'>Green</option>
-                        <option value='gray'>Gray</option>
+                        <option value=''>Any Attribute</option>
+                        <option value='Red'>Red</option>
+                        <option value='Blue'>Blue</option>
+                        <option value='Green'>Green</option>
+                        <option value='Gray'>Gray</option>
                     </select>
                     <select name='class'>
-                        <option value='any'>Any Class</option>
-                        <option value='sword'>Sword</option>
-                        <option value='lance'>Lance</option>
-                        <option value='axe'>Axe</option>
-                        <option value='mage'>Mage</option>
-                        <option value='beast'>Beast</option>
-                        <option value='staff'>Staff</option>
-                        <option value='bow'>Bow</option>
-                        <option value='shuriken'>Shuriken</option>
+                        <option value=''>Any Class</option>
+                        <option value='Sword'>Sword</option>
+                        <option value='Lance'>Lance</option>
+                        <option value='Axe'>Axe</option>
+                        <option value='Mage'>Mage</option>
+                        <option value='Beast'>Beast</option>
+                        <option value='Staff'>Staff</option>
+                        <option value='Bow'>Bow</option>
+                        <option value='Shuriken'>Shuriken</option>
                     </select>
                     <select name='gender'>
-                        <option value='any'>Any Gender</option>
-                        <option value='male'>Male</option>
-                        <option value='female'>Female</option>
+                        <option value=''>Any Gender</option>
+                        <option value='Male'>Male</option>
+                        <option value='Female'>Female</option>
                     </select>
                 </div>
                 <div class='input_container'>
@@ -124,10 +124,10 @@
             if(isset($_POST['add'])) {
                 include 'php/add.php';
             }
-            else {
-                include 'php/display.php';
-
+            elseif(isset($_POST['search'])) {
+                include 'php/search.php';
             }
+            include 'php/display.php';
         ?>
     </div>
 
