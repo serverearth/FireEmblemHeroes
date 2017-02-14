@@ -13,10 +13,13 @@
     <script type='text/javascript' src='scripts/main.js'></script>
 </head>    
 
+<!-- Credits to https://goo.gl/16hXFz for the tile background -->
 <body>
     <div id='title_container' class='container'>
-        <!-- http://fireemblemheroeshack.com/img/logo.png -->
-        <a href='index.php'><img src='images/title.jpg'></a>
+        <!-- Credits to http://fireemblemheroeshack.com/img/logo.png for the banner -->
+        <a href='index.php'><img src='images/title.jpg' alt='banner'></a>
+        <div id='credits'>Credits to http://fireemblemheroeshack.com/img/logo.png 
+            for providing the image</div>
     </div>
 
     <div id='add_search_container' class='container'>
@@ -112,9 +115,9 @@
         <a href='#heroes_container'>View The Heroes Below!</a>
     </div>
 
-    <!-- https://thenounproject.com/term/up-caret/196766/ -->
+    <!-- Credits to https://thenounproject.com/term/up-caret/196766/ for providing the icon -->
     <div id='caret_container'>
-        <a href='#title_container'><img src='images/caret.jpg'></a>
+        <a href='#title_container'><img src='images/caret.jpg' alt='^'></a>
     </div>
 
     <div id='heroes_container' class='container'>
@@ -126,12 +129,17 @@
             elseif(isset($_POST['add'])) {
                 include 'php/add.php';
             }
+            // Credits to https://fireemblem.gamepress.gg/ for all of the hero images
             display_heroes($heroes);
         ?>
     </div>
 
     <div id='footer'>
-        All credits go to https://fireemblem.gamepress.gg/ for providing the images used in this website
+        All credits go to https://goo.gl/16hXFz, 
+        http://fireemblemheroeshack.com/img/logo.png, 
+        https://fireemblem.gamepress.gg/, and 
+        https://thenounproject.com/term/up-caret/196766/ for the images used in 
+        this website
     </div>
 </body>
 </html>

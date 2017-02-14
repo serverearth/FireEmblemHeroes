@@ -1,8 +1,7 @@
 <?php
 
-    // reperesents a hero with properties that describe him or her
+    /* Reperesents a hero with properties that describe him or her */
     class Hero {
-
         public $name, $title, $attribute, $class, $gender, $hp, $atk, $spd, 
             $def, $res, $image;
 
@@ -19,11 +18,12 @@
             $this->def = $def;
             $this->res = $res;
             $this->image = $image;
-        }
-
+        }   
     }
 
-    // populates the heroes array with hero objects representing each hero in the data
+    /* Returns an array of hero objects representing each hero in the data 
+     * Prints an error message if the data cannot be found
+     */
     function get_heroes_data() {
         $file_pointer = fopen('data.txt', 'r');
         if(!$file_pointer) {
@@ -42,7 +42,7 @@
         return $heroes;
     }
 
-    // generates html to display the heroes in the heroes array
+    /* Generates html to display the heroes in the parameter heroes array */
     function display_heroes($heroes) {
         foreach($heroes as $hero) {
             $name = $hero->name;
@@ -56,9 +56,8 @@
             $def = $hero->def;
             $res = $hero->res;
             $image = 'images/' . $hero->image;
-
             echo "<div class='hero_container'>
-                    <img src='$image'>
+                    <img src='$image' alt='hero image'>
                     <div class='hero_profile_container'>
                         <p>Name: $name</p>
                         <p>Title: $title</p>
@@ -70,6 +69,8 @@
                         <p>Spd: $spd</p>
                         <p>Def: $def</p>
                         <p>Res: $res</p>
+                        <p class='credits'>Credits to 
+                            https://goo.gl/621eyO for the image</p>
                     </div>
                 </div>";
         }

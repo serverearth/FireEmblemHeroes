@@ -19,6 +19,10 @@ $(document).ready(function() {
   });
 });
 
+/* Fades in the caret button if the the user scrolls past 100px
+ * Fades out the caret button if the user has not scrolled past 100px or 
+ * the user scrolls back up to above 100px
+ */
 $(window).scroll(function() {
     if ($(this).scrollTop() >= 100) {        // If page is scrolled more than 50px
         $('#caret_container').fadeIn(200);    // Fade in the arrow

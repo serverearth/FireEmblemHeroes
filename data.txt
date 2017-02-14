@@ -39,6 +39,3 @@ Jeorge|Perfect Shot|Gray|Bow|Male|19|23|9|6|6|jeorge.jpg
 Sakura|Loving Priestess|Gray|Staff|Female|18|7|9|6|9|sakura.jpg
 Takumi|Wild Card|Gray|Bow|Male|19|23|8|7|6|takumi.jpg
 Wrys|Kindly Priest|Gray|Staff|Male|19|6|7|6|11|wrys.jpg
-Ryan Yoon|Hacker|Red|Sword|Male|1|1|1|1|1|roy.jpg
-Julio|Sombreo|Red|Sword|Male|1|1|1|1|1|roy.jpg
-Wilson Pham|Crafty Ferret|Green|Axe|Female|1|1|1|1|1|roy.jpg

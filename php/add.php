@@ -1,13 +1,19 @@
 <?php
      
-    // validates the name and title of a custom hero
-    function validate_add($hero_data) {
+    /* Validates the name and title of a custom hero
+     * Returns 0 if the name is not valid
+     * Returns 1 if the title is not valid
+     * Returns 2 if the name already exists in the data
+     * Returns 3 if the title already exists in the data
+     * Returns 4 otherwise 
+     */
+    function validate_add($hero_data, $heroes) {
         $name = $hero_data['name'];
         $title = $hero_data['title'];
-        if(!preg_match('/[a-zA-Z\s]+/', $name)) {
+        if(!preg_match('/^[a-zA-Z\s]+$/', $name)) {
            return 0; // contains characters other than letters and spaces
         } 
-        else if(!preg_match('/[a-zA-Z\s]+/', $title)) {
+        else if(!preg_match('/^[a-zA-Z\s]+$/', $title)) {
             return 1; // contains characters other than letters and spaces
         }
         else {
@@ -23,7 +29,10 @@
         return 4; // valid name and title
     } 
 
-    // adds a custom hero to the data if the name and title are valid
+    /* Adds a custom hero to the data with the parameter properties and default
+     * image roy.jpg
+     * Returns an array containing the custom hero 
+     */
     function add_hero($hero_data) {
         $add_result = array();
         $file_pointer = fopen('data.txt', 'a');
@@ -44,25 +53,26 @@
         return $add_result;
     }
 
-    $error_code = validate_add($_POST);
-    if($error_code === 0) {
+    $hero_data = array_map('trim', $_POST);
+    $error_code = validate_add($hero_data, $heroes);
+    if($error_code === 0) { // name is not valid
         $heroes = array();
         echo '<p>Please Enter a Valid Name!</p>';
     }
-    elseif($error_code === 1) {
+    elseif($error_code === 1) { // title is not valid
         $heroes = array();
         echo '<p>Please Enter a Valid Title!</p>';
     }
-    elseif($error_code === 2) {
+    elseif($error_code === 2) { // name already exists in data
         $heroes = array();
         echo '<p>The Name You Have Entered Already Exists!</p>';
     }
-    elseif($error_code === 3) {
+    elseif($error_code === 3) { // title already exists in data
         $heroes = array();
         echo '<p>The Title You Have Entered Already Exists!</p>';
     }
-    else {
-        $heroes = add_hero($_POST);
+    else { // name and title are valid and do not already exist in data
+        $heroes = add_hero($hero_data);
         echo '<p>Here Is Your Custom Hero!</p>';
     }
 
