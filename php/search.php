@@ -58,11 +58,11 @@
     }
 
     $error_code = validate_search($_POST);
-    if($error_code == 0) {
+    if($error_code === 0) {
         $heroes = array();
         echo '<p>Please Enter a Valid Name!</p>';
     }
-    else if($error_code == 1) {
+    elseif($error_code === 1) {
         $heroes = array();
         echo '<p>Please Enter a Valid Title!</p>';
     }

@@ -120,14 +120,13 @@
     <div id='heroes_container' class='container'>
         <?php 
             include 'php/heroes.php';
-
-            if(isset($_POST['add'])) {
-                include 'php/add.php';
-            }
-            elseif(isset($_POST['search'])) {
+            if(isset($_POST['search'])) {
                 include 'php/search.php';
             }
-            include 'php/display.php';
+            elseif(isset($_POST['add'])) {
+                include 'php/add.php';
+            }
+            display_heroes($heroes);
         ?>
     </div>
 
