@@ -43,8 +43,8 @@
         $def = $hero_data['def'];
         $res = $hero_data['res'];
         foreach($heroes as $hero) {
-            if(compare_property($name, $hero->name)) {
-                if(compare_property($title, $hero->title)) {
+            if(compare_property(strtolower($name), strtolower($hero->name))) {
+                if(compare_property(strtolower($title), strtolower($hero->title))) {
                     if(compare_property($attribute, $hero->attribute)) {
                         if(compare_property($class, $hero->class)) {
                             if(compare_property($gender, $hero->gender)) {

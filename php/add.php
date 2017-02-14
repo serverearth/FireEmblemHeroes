@@ -18,10 +18,10 @@
         }
         else {
             foreach ($heroes as $hero) {
-                if($hero->name === $name) {
+                if(strtolower($hero->name) === strtolower($name)) {
                     return 2; // name already exists in data
                 }
-                elseif ($hero->title === $title){
+                elseif (strtolower($hero->title) === strtolower($title)) {
                     return 3; // title already exists in data
                 }
             }
