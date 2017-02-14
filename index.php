@@ -9,12 +9,14 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>FE Heroes</title>
     <link rel='stylesheet' type='text/css' href='styles/styles.css'>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script type='text/javascript' src='scripts/main.js'></script>
 </head>    
 
 <body>
     <div id='title_container' class='container'>
         <!-- http://fireemblemheroeshack.com/img/logo.png -->
-        <img src="images/title.jpg">
+        <a href='index.php'><img src='images/title.jpg'></a>
     </div>
 
     <div id='add_search_container' class='container'>
@@ -72,24 +74,24 @@
                 </div>
                 <div class='input_container'>
                     <select name='attribute'>
-                        <option value='red'>Red</option>
-                        <option value='blue'>Blue</option>
-                        <option value='green'>Green</option>
-                        <option value='gray'>Gray</option>
+                        <option value='Red'>Red</option>
+                        <option value='Blue'>Blue</option>
+                        <option value='Green'>Green</option>
+                        <option value='Gray'>Gray</option>
                     </select>
                     <select name='class'>
-                        <option value='sword'>Sword</option>
-                        <option value='lance'>Lance</option>
-                        <option value='axe'>Axe</option>
-                        <option value='mage'>Mage</option>
-                        <option value='beast'>Beast</option>
-                        <option value='staff'>Staff</option>
-                        <option value='bow'>Bow</option>
-                        <option value='shuriken'>Shuriken</option>
+                        <option value='Sword'>Sword</option>
+                        <option value='Lance'>Lance</option>
+                        <option value='Axe'>Axe</option>
+                        <option value='Mage'>Mage</option>
+                        <option value='Beast'>Beast</option>
+                        <option value='Staff'>Staff</option>
+                        <option value='Bow'>Bow</option>
+                        <option value='Shuriken'>Shuriken</option>
                     </select>
                     <select name='gender'>
-                        <option value='male'>Male</option>
-                        <option value='female'>Female</option>
+                        <option value='Male'>Male</option>
+                        <option value='Female'>Female</option>
                     </select>
                 </div>
                 <div class='input_container'>
@@ -107,11 +109,30 @@
     </div>
 
     <div id='button_container' class='container'>
-        <button type='button'>View The Heroes Below!</button>
+        <a href='#heroes_container'>View The Heroes Below!</a>
+    </div>
+
+    <!-- https://thenounproject.com/term/up-caret/196766/ -->
+    <div id='caret_container'>
+        <a href='#title_container'><img src='images/caret.jpg'></a>
     </div>
 
     <div id='heroes_container' class='container'>
-        
+        <?php 
+            include 'php/heroes.php';
+
+            if(isset($_POST['add'])) {
+                include 'php/add.php';
+            }
+            else {
+                include 'php/display.php';
+
+            }
+        ?>
+    </div>
+
+    <div id='footer'>
+        All credits go to https://fireemblem.gamepress.gg/ for providing the images used in this website
     </div>
 </body>
 </html>

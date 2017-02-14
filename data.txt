@@ -1,4 +1,3 @@
-Name|Title|Attribute|Class|Gender|Hp|Atk|Spd|Def|Res|Image
 Alfonse|Prince of Askr|Red|Sword|Male|20|21|7|9|6|alfonse.jpg
 Caeda|Talys's Heart|Red|Sword|Female|18|19|11|6|10|caeda.jpg
 Cain|The Bull|Red|Sword|Male|19|17|3|8|7|cain.jpg
